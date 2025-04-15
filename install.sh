@@ -126,4 +126,8 @@ if ! check_zsh_installed; then
     install_revup || { print_error "Failed to install revup."; exit 1; }
 fi
 
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.bash_aliases ~/.bash_aliases
+
 print_info "Done!"
